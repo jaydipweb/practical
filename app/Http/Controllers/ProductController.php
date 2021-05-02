@@ -85,8 +85,10 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update($id)
-    {
+    public function update(Request $request, $id)
+    { 
+        print_r($request);
+        exit;
         $name = $_POST['name'];
         $description = $_POST['description'];
         $price = $_POST['price'];
